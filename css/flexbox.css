@@ -1,0 +1,71 @@
+                /* FLEX CONTAINER */
+.container{
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row; 
+    /*column | column-reverse | row | row-reverse*/
+
+    /* quebra de linha flex*/
+    flex-wrap: nowrap;
+
+    /*shortcut de flex-direction e wrap*/
+    /*flex-flow: row wrap-reverse;*/
+
+    /* alinhamento horizontal*/
+    justify-content: flex-start;
+    /* flex-start | flex-end | center | space-between | space-around */
+
+    /* alinhamento vertical*/
+    align-items: stretch;
+    /* flex-start | flex-end | center | baseline*/
+
+    /* alinhamento vertical quando os elementos estiverem em quebra de linha*/
+    align-content: flex-start;
+    /* flex-start | flex-end | center | space-between | space-around | stretch (funciona apenas sem a altura pre-fixada)*/
+}
+
+.item{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    height: 30px;
+
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+                /* FLEX ITEMS */
+/*
+    order: define a ordem
+
+    align-self: define o alinhamento individual
+
+    flex-grow: define a mesma largura para todos os itens quando aplicado em um grupo de itens. Quando aplicado a um item individual ele ocupa o espaço que o foi definido
+
+    flex-bases: define uma largura inicial
+
+    flex-shrink: define a capacidade de redução do item
+
+    flex: shortcut que contém respectivamente: 
+        flex-grow - flex-shrink - flex-basis
+*/
+.article-01{
+    flex-shrink: 3;
+}
+
+.article-02{
+    
+
+}
+
+.article-03{
+    
+}
+
+.article-04{
+
+}
