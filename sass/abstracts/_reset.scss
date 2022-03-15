@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+    /* variaveis */
+    --cor-princ: #191c03;
+    --cor-icon: #c3c63b;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 70%;
+    transition: all 150ms ease-in;
+}
+a:hover{
+    opacity: 100%;
+}

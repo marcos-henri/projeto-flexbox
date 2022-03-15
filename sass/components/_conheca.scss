@@ -1,0 +1,49 @@
+.conheca-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    & h3{
+        font-size: 2rem;
+        margin-bottom: 35px;
+        color: var(--cor-princ);
+        text-align: center;
+    }
+    & p {
+        max-width: 800px;
+        margin-bottom: 35px;
+        color: var(--cor-princ);
+        text-align: center;
+    }
+    & hr {
+        width: 200px;
+        height: 2px;
+        background-color: var(--cor-princ);
+        margin-bottom: 70px;
+        border: none;
+    }
+    & .grid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            height: 350px;
+            padding: 20px;
+            border-radius: 4px;
+            background-clip: content-box;
+            background-size: cover;
+            position: center;
+        }
+        & .small{
+            flex-basis: 40%;
+        }
+        & .large{
+            flex-basis: 60%;
+        }
+    }   
+}
+@media (max-width: 700px){
+    .conheca-o-hotel .grid .small, .conheca-o-hotel .grid .large{
+        flex-basis: 100%;
+    }
+}

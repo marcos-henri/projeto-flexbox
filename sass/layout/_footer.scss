@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-princ);
+    padding: 50px 0;
+    align-items: center;
+    & ul {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    & li {
+        margin-right: 10px;
+    }
+    & li:last-child{
+        margin-right: 0;
+    }
+    & a{
+        color: var(--cor-icon);
+        font-size: 2rem;
+    }
+    & p{
+        color: var(--cor-icon);
+        text-align: center;
+    }
+}
